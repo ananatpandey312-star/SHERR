@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+
+    background: url("background.PNG");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: orange; /* Just to see the board */
+    width: 90vmin;
+    height: 90vmin;
+    display: grid;
+    /* Adjust these numbers based on your logic (e.g., 18x18 grid) */
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    border: 2px solid black;
+    margin: auto;
+}
+
+.head {
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.snake {
+    background-color: purple;
+    border: 1px solid rgb(75, 9, 231);
+    border-radius: 2px;
+}
+
+.food {
+    background-color: yellow;
+    border-radius: 50%;
+}
